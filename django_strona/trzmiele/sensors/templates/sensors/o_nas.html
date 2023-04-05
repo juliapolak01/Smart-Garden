@@ -1,0 +1,63 @@
+{% extends 'main.html' %}
+{% block content %}
+{% load static %}
+
+<div class="container-fluid p-3">
+    <div class="row">
+
+       <!-- 1 Kolumna -->
+        <div class="col-sm-6">
+            <div class="card-group">
+                <div class="card">
+                  <img class=" img-fluid  img-thumbnail rounded mx-auto d-block"  src="{% static 'sensors/konrad1.png' %}" alt="konrad">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">PSZCZELARZ</h5>
+                    <p class="card-text text-center ">Konrad Krupski</p>
+                    
+                  </div>
+                </div>
+                
+                <div class="card">
+                 <img class="img-fluid  img-thumbnail rounded mx-auto d-block"   src="{% static 'sensors/julia.png' %}" alt="julia">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">PSZCZÓŁKA</h5>
+                    <p class="card-text text-center">Julia Polak</p>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-group">
+                <div class="card">
+                  <img class="img-fluid  img-thumbnail rounded mx-auto d-block" src="{% static 'sensors/lena.png' %}" alt="lena">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">TRZMIEL</h5>
+                    <p class="card-text text-center">Lena Potkańska</p>
+                    
+                  </div>
+                </div>
+                
+                <div class="card">
+                  <img class="img-fluid  img-thumbnail rounded mx-auto d-block" src="{% static 'sensors/michal.png' %}" alt="michal">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">KWIAT</h5>
+                    <p class="card-text text-center">Michał Jarosik</p>
+                    
+                  </div>
+                </div>
+              </div>
+        </div>
+<!-- 2 kolumna -->
+<div class="col-sm-6 d-flex align-items-center">
+    <div class="text-center">
+      <h2>O nas...</h2>
+      <p>
+        Jesteśmy grupą czterech studentów i razem tworzymy team TRZMIELE.Studiujemy na Politechnice Warszawskiej na Wydziale Elektroniki i Technik Informacyjnych na kierunku Elektronika z specjalizacją elektronika i foronika w instytucie IMIO. Każdy z nas ma inne zainteresowania, poglądy, kulturę, ale dopełniamy się i tworzymy zgrany zespół. Pod opieką dr. Piotra Pałki stworzyliśmy innowacyjny projekt, który zapewni piękne ogródki w każdym miejscu. Nasz projekt SMART GARDEN rozwiązuje problemy każdego z nas: Lenie usychają każde kwiaty, Julka nie ma czasu, Michał nie ma ogródka, natomiast Konrad wogóle nie interesuje się ogrodnictwem. 
+     </p>
+      <img src="{% static 'sensors/male_logo.png' %}" height="100" width="100" alt="trzmiel" class=" img-fluid img-thumbnail" style='background-color: transparent'>
+    </div>
+  </div>
+    
+     </div>
+</div>
+{% endblock content %}

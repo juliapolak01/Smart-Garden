@@ -1,0 +1,45 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <a class="navbar-brand" href="#">
+        <img src="{% static 'sensors/male_logo.png' %}" width="50" height="40" class="d-inline-block align-top" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="{% url 'home' %}">Strona główna</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Czujnik Temperatury i Wilgotności
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="{% url 'sensorPage' 4 %}">Temperatura</a>
+            <a class="dropdown-item" href="{% url 'sensorPage' 6 %}">Wilgotność</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'sensorPage' 5 %}">Czujnik Natężenia Oświetlenia</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Czujnik Wilgotności Gleby
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="{% url 'sensorPage' 1 %}">Czujnik 1</a>
+            <a class="dropdown-item" href="{% url 'sensorPage' 2 %}">Czujnik 2</a>
+            <a class="dropdown-item" href="{% url 'sensorPage' 3 %}">Czujnik 3</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'ciekawostki' %}">Ciekawostki</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'o_nas' %}">O nas</a>
+        </li>
+        </ul>
+    </div>
+    </nav>
